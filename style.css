@@ -14,6 +14,8 @@ body {
 .container {
     width: 73%;
     margin: 0 auto;
+    font-size: 10px;
+    text-align: center;
 }
 
 li {
@@ -40,21 +42,36 @@ header .container {
 header .container nav {
     height: 50px;
     width: 200px;
-    background-color: yellow;
+    display: flex;
+    align-items: center;
 }
 
-header .container .logo {
-    height: 50px;
-    width: 200px;
-    background-color: aqua;
+header .container nav ul {
     display: flex;
+   /* align-items: center; */
+}
+
+
+header .container .logo {
+    width: 100px;
+    height: 24px;
+    display: flex;
+    margin-top: 17px;
+    align-items: center;
+    justify-content: center;
+    align-items: center;
 }
 
 header .container .cart {
-    position: static;
+    display: flex;
+    justify-content: flex-end;
     height: 50px;
     width: 200px;
-    background-color: blue;
+}
+
+header .container .cart ul {
+    display: flex;
+    align-items: center;
 }
 
 /* MAIN */
@@ -67,20 +84,103 @@ main .container img {
 
 
 main .container {
-    background-color: yellowgreen;
     margin-top: 34px;
-    padding: 0 6px;
     
 }
 
 .card {
     position: relative;
     display: inline-block;
+    margin-bottom: 29px;
 }
 
+.white {
+    height: 37px;
+    width: 37px;
+    background-color: white;
+    position: absolute;
+    top: 16px;
+    right: 4px;
+}
+
+.red {
+    height: 20px;
+    width: 36px;
+    background-color: #EA3324;
+    position: absolute;
+    left: 4px;
+    bottom: 67px;
+    color: white;
+}
+
+.green {
+    height: 20px;
+    width: 74px;
+    background-color: #377E23;
+    position: absolute;
+    left: 43px;
+    bottom: 67px;
+    color: white;
+}
+
+.last {
+    left: 4px;
+}
+
+.red, .green {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 900;
+}
+
+.white {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+i {
+    font-size: 16px;
+}
+
+.tag, .descrizione, .prezzo {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.etichetta {
+    padding: 0 4px;
+}
+
+.descrizione {
+    font-weight: bold;
+}
+
+.prezzi {
+    text-align: left;
+}
+
+.price {
+    color: #EA3324;
+    font-weight: 900;
+}
+
+.old-price {
+    text-decoration: line-through;
+}
+
+/* FOOTER */
 
 footer {
-    height: 110px;
+    height: 77px;
     background-color: #1A1A1B;
+    color: white;
+    font-weight: 900;
 }
 
+footer .container {
+    display: flex;
+    justify-content: space-between;
+    
+}
