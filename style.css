@@ -1,3 +1,5 @@
+/*General*/
+
 * {
     margin: 0;
     padding: 0;
@@ -10,8 +12,7 @@ body {
 }
 
 .container {
-    width: 70%;
-    max-width: 1400px;
+    width: 73%;
     margin: 0 auto;
 }
 
@@ -19,14 +20,67 @@ li {
     list-style: none;
 }
 
+
+/* HEADER */
+
 header {
+    display: flex;
+    align-items: center;
     background-color: #ED722E;
-    height: 70px;
+    height: 50px;
+    color: white;
 }
 
-.box {
+header .container {
     display: flex;
-    justify-content: center;
-    background-color: yellowgreen;
-    min-height: 1568px;
+    justify-content: space-between;
+    margin: 0 auto;
 }
+
+header .container nav {
+    height: 50px;
+    width: 200px;
+    background-color: yellow;
+}
+
+header .container .logo {
+    height: 50px;
+    width: 200px;
+    background-color: aqua;
+    display: flex;
+}
+
+header .container .cart {
+    position: static;
+    height: 50px;
+    width: 200px;
+    background-color: blue;
+}
+
+/* MAIN */
+
+main .container img {
+    max-width: 100%;
+    width: 325px;
+    padding: 9px 4px 0px;
+}
+
+
+main .container {
+    background-color: yellowgreen;
+    margin-top: 34px;
+    padding: 0 6px;
+    
+}
+
+.card {
+    position: relative;
+    display: inline-block;
+}
+
+
+footer {
+    height: 110px;
+    background-color: #1A1A1B;
+}
+
