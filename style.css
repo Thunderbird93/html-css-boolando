@@ -13,3 +13,8 @@ body {
     width: 72.91%;
     max-width: 1400px;
 }
+
+header {
+    background-color: #ED722E;
+    height: 70px;
+}
