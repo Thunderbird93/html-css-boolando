@@ -6,4 +6,10 @@
 
 body {
     background-color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.container {
+    width: 72.91%;
+    max-width: 1400px;
 }
