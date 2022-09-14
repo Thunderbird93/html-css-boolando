@@ -10,11 +10,23 @@ body {
 }
 
 .container {
-    width: 72.91%;
+    width: 70%;
     max-width: 1400px;
+    margin: 0 auto;
+}
+
+li {
+    list-style: none;
 }
 
 header {
     background-color: #ED722E;
     height: 70px;
+}
+
+.box {
+    display: flex;
+    justify-content: center;
+    background-color: yellowgreen;
+    min-height: 1568px;
 }
